@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg header_nav">
+            <div class="container-fluid nav_container">
+                <a class="navbar-brand header_logo" href="#">INDIEGOGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Explore<i
+                                    class="far fa-angle-down explore_arow"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">What we do</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input hidden class="form-control me-2 input_search" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <i class="fas fa-times remove_search"></i>
+                                <button class="btn btn-outline-success search_btn"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="nav_right d-flex">
+                        <li><a class="nav-link" href="">For Entrepreneurs</a></li>
+                        <li><a class="nav-link" href="">Start a Campaign</a></li>
+                        <li><a class="nav-link" href="">Log In</a></li>
+                        <li><a class="nav-link" href="">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header_hidden">
+            <div class="hidden_top">
+                <div class="all-projects">
+                    <h2 class="hidden_top-title">Explore All Projects
+                    </h2>
+                    <div class="all-projects_img">
+                        <img src="images/all-projects.png" alt="">
+                        <span class="all-projects_text">
+                            Clever Things For Curious Humans™
+                        </span>
+                    </div>
+                </div>
+                <div class="top10">
+                    <h2 class="hidden_top-title"> Our Top 10 Finds</h2>
+                    <img src="images/top10.jpg" alt="">
+                </div>
+                <div class="team">
+                    <h2 class="hidden_top-title">
+                        Team Favorites
+                    </h2>
+                    <img src="images/team.jpg" alt="">
+                </div>
+                <div class="inDemand">
+                    <h2 class="hidden_top-title">
+                        InDemand Stars
+                    </h2>
+                    <img src="images/inDemand.jpg" alt="">
+                </div>
+                <div class="convo">
+                    <h2 class="hidden_top-title">
+                        Join the Convo
+                    </h2>
+                    <img src="images/convo.jpg" alt="">
+                </div>
+            </div>
+            <div class="hidden_bottom">
+                <div class="hidden_bottom_content">
+                    <div class="hidden_bottom_content_column">
+                        <h2 class="column_title">TECH & INNOVATION</h2>
+                        <ul class="column_items">
+                            <li>Audio</li>
+                            <li>Camera Gear</li>
+                            <li>Education</li>
+                            <li>Energy & Green Tech</li>
+                            <li>Fashion & Wearables</li>
+                            <li>Food & Beverages</li>
+                        </ul>
+                        <ul class="column_items">
+                            <li>Health & Fitness</li>
+                            <li>Home</li>
+                            <li>Phones & Accessories</li>
+                            <li>Productivity</li>
+                            <li>Transportation</li>
+                            <li>Travel & Outdoors</li>
+                        </ul>
+                    </div>
+                    <div class="hidden_bottom_content_column">
+                        <h2 class="column_title">CREATIVE WORKS</h2>
+                        <ul class="column_items">
+                            <li>Art</li>
+                            <li>Comics</li>
+                            <li>Dance & Theater</li>
+                            <li>Film</li>
+                            <li>Music</li>
+                            <li>Photography</li>
+                        </ul>
+                        <ul class="column_items">
+                            <li>Podcasts, Blogs & Vlogs</li>
+                            <li>Tabletop Games</li>
+                            <li>Video Games</li>
+                            <li>Web Series & TV Shows</li>
+                            <li>Writing & Publishing</li>
+                        </ul>
+                    </div>
+                    <div class="hidden_bottom_content_column">
+                        <h2 class="column_title">COMMUNITY PROJECTS</h2>
+                        <ul class="column_items">
+                            <li>Culture</li>
+                            <li>Environment</li>
+                            <li>Human Rights</li>
+                            <li>Local Businesses</li>
+                            <li>Wellness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div id="splide" class="main_top_slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide splide_top">
+                        <div class="slide_content container">
+                            <h1 class="slide_type">GOGOPICKS</h1>
+                            <h2 class="slide_title">JMGO O1 Pro- Ultra-short Throw Smart LED Projector</h2>
+                            <p class="slide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.
+                                Quos, voluptatibus consequatur nesciunt corporis doloremque eum id eaque officiis.</p>
+                            <a href="" class="slide_link">SEE CAMPAIGN</a>
+                        </div>
+
+                    </li>
+                    <li class="splide__slide splide_top">
+                        <div class="slide_content container">
+                            <h1 class="slide_type">GOGOPICKS</h1>
+                            <h2 class="slide_title">Crua AER - The Roof Top Tent: Reimagined</h2>
+                            <p class="slide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.
+                                Quos, voluptatibus consequatur nesciunt corporis doloremque eum id eaque officiis.</p>
+                            <a href="" class="slide_link">SEE CAMPAIGN</a>
+                        </div>
+                    </li>
+                    <li class="splide__slide splide_top">
+                        <div class="slide_content container">
+                            <h1 class="slide_type">GOGOPICKS</h1>
+                            <h2 class="slide_title">Dusk: App-enabled electrochromic smart sunglasses</h2>
+                            <p class="slide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.
+                                Quos, voluptatibus consequatur nesciunt corporis doloremque eum id eaque officiis.</p>
+                            <a href="" class="slide_link">SEE CAMPAIGN</a>
+                        </div>
+                    </li>
+                    <li class="splide__slide splide_top">
+                        <div class="slide_content container">
+                            <h1 class="slide_type">GOGOPICKS</h1>
+                            <h2 class="slide_title">Launching Soon! ONveexen 100 -World's Super Fastest 265W Powerbank
+                            </h2>
+                            <p class="slide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.
+                                Quos, voluptatibus consequatur nesciunt corporis doloremque eum id eaque officiis.</p>
+                            <a href="" class="slide_link">SEE CAMPAIGN</a>
+                        </div>
+                    </li>
+                    <li class="splide__slide splide_top">
+                        <div class="slide_content container">
+                            <h1 class="slide_type">GOGOPICKS</h1>
+                            <h2 class="slide_title">Launching Soon! Peakhonor - Portable & Powerful Eco-Friendly Bidet
+                            </h2>
+                            <p class="slide_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, at.
+                                Quos, voluptatibus consequatur nesciunt corporis doloremque eum id eaque officiis.</p>
+                            <a href="" class="slide_link">SEE CAMPAIGN</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="find-first">
+                <h2 class="find-first_title">Find it first on Indiegogo.</h2>
+                <p class="find-first_text">Indiegogo is where early adopters and innovation seekers find lively,
+                    imaginative tech before it hits the mainstream.</p>
+                <div class="find-first_btns">
+                    <a href="" class="find-first_btn">sign up now</a>
+                    <a href="" class="find-first_btn">learn now</a>
+                </div>
+            </div>
+        </div>
+        <div class="popular-projects container">
+            <h2 class="popular-projects_title">Popular Projects
+            </h2>
+            <div class="splide" id="popular-projects">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="popular-projects_slide_inner">
+                                <img class="popular-projects_img" src="images/slider_img1.jpg" alt="">
+                                <div class="popular-projects_content">
+                                    <div class="popular-projects_content_top">
+                                        <h2 class="popular-projects_label">funding</h2>
+                                        <button class="popular-projects_like-btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                    <h2 class="popular-projects_title">
+                                        Morium: Season 1
+                                    </h2>
+                                    <p class="popular-projects_description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Magni inventore quos eos accusamus similique quaerat facilis
+                                        exercitationem blanditiis, odit non.</p>
+                                    <h2 class="popular-projects_type">Writing & Publishing</h2>
+                                    <div class="price">
+                                        <div class="price_num">
+                                            €21 806 <span class="price_num_span">
+                                                EUR raised
+                                            </span>
+                                        </div>
+                                        <div class="price_percentage">121%</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress_completed"></div>
+                                    </div>
+                                    <div class="time-left"><i class="fas fa-clock"></i> 48 hours left</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="collection container">
+            <div class="collection_content">
+                <div class="collection_item">
+                    <div class="collection_item_img">
+                        <img src="images/top10.jpg" alt="">
+                        <h2 class="collection_item_img-text">
+                            10 Cool & Clever Finds
+                        </h2>
+                    </div>
+                    <div class="collection_item_bottom">
+                        <a href="" class="collection_item_bottom_left">
+                            Our roundup of standout projects
+                        </a>
+                        <a href="" class="collection_item_bottom_right">see the collection <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection_item">
+                    <div class="collection_item_img">
+                        <img src="images/top10.jpg" alt="">
+                        <h2 class="collection_item_img-text">
+                            10 Cool & Clever Finds
+                        </h2>
+                    </div>
+                    <div class="collection_item_bottom">
+                        <a href="" class="collection_item_bottom_left">
+                            Our roundup of standout projects
+                        </a>
+                        <a href="" class="collection_item_bottom_right">see the collection <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection_item">
+                    <div class="collection_item_img">
+                        <img src="images/top10.jpg" alt="">
+                        <h2 class="collection_item_img-text">
+                            10 Cool & Clever Finds
+                        </h2>
+                    </div>
+                    <div class="collection_item_bottom">
+                        <a href="" class="collection_item_bottom_left">
+                            Our roundup of standout projects
+                        </a>
+                        <a href="" class="collection_item_bottom_right">see the collection <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection_item">
+                    <div class="collection_item_img">
+                        <img src="images/top10.jpg" alt="">
+                        <h2 class="collection_item_img-text">
+                            10 Cool & Clever Finds
+                        </h2>
+                    </div>
+                    <div class="collection_item_bottom">
+                        <a href="" class="collection_item_bottom_left">
+                            Our roundup of standout projects
+                        </a>
+                        <a href="" class="collection_item_bottom_right">see the collection <i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="back-project container">
+            <img src="images/all-projects.png" alt="">
+            <div class="back-project_content">
+                <h2 class="back-project_title">
+                    Back the project, take the ride
+                </h2>
+                <p class="back-project_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum molestias
+                    autem sint odit nihil repudiandae optio quae numquam? Voluptatum beatae sit, quam doloribus
+                    perspiciatis eligendi dolores consequatur, vel id tenetur quasi! Ut ea laudantium qui porro quas
+                    reprehenderit rem voluptatibus.</p>
+                <a href="" class="back-project_link">
+                    Learn about crowdfunding <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+        <section class="categories container">
+            <h2 class="categories_title">
+                Which categories interest you?
+            </h2>
+            <p class="categories_description">Discover projects just for you and get great recommendations when you
+                select your interests.</p>
+            <a href="" class="categories_signup-btn">
+                Sign up and select interests
+            </a>
+            <p class="categories_explore">Or explore our top categories</p>
+            <div class="categories_items">
+                <div class="categories_item">
+                    <i class="fas fa-home" title="Home"></i>
+                    <div class="categories_item_text">Home</div>
+                </div>
+                <div class="categories_item">
+                    <i class="fas fa-mobile-android-alt"></i>
+                    <div class="categories_item_text">
+                        Phones & Accessories
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <i class="fas fa-backpack" title="Travel & Outdoors"></i>
+                    <div class="categories_item_text">
+                        Travel & Outdoors
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <i class="fas fa-watch-fitness" title="Health & Fitness"></i>
+                    <div class="categories_item_text">
+                        Health & Fitness
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <i class="fas fa-speaker" title="Audio"></i>
+                    <div class="categories_item_text">
+                        Audio
+                    </div>
+                </div>
+                <div class="categories_item">
+                    <i class="fas fa-camera-movie" title="Film"></i>
+                    <div class="categories_item_text">
+                        Film
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review container">
+            <h2 class="review_title">From the Indiegogo Review</h2>
+            <p class="review_description">Your behind-the-scenes view of the people and stories behind Indiegogo
+                projects</p>
+            <div class="review_items">
+                <div class="review_item">
+                    <img src="images/top10.jpg" alt="">
+                    <h3 class="review_item_title">3 Tips For Pitching Your Business Idea</h3>
+                    <p class="review_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        laboriosam, reprehenderit officia unde vero sunt doloremque architecto repellendus eaque quo?
+                    </p>
+                    <a href="" class="collection_item_bottom_right">read more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="review_item">
+                    <img src="images/top10.jpg" alt="">
+                    <h3 class="review_item_title">3 Tips For Pitching Your Business Idea</h3>
+                    <p class="review_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        laboriosam, reprehenderit officia unde vero sunt doloremque architecto repellendus eaque quo?
+                    </p>
+                    <a href="" class="collection_item_bottom_right">read more <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="review_item">
+                    <img src="images/top10.jpg" alt="">
+                    <h3 class="review_item_title">3 Tips For Pitching Your Business Idea</h3>
+                    <p class="review_item_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                        laboriosam, reprehenderit officia unde vero sunt doloremque architecto repellendus eaque quo?
+                    </p>
+                    <a href="" class="collection_item_bottom_right">read more <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="clever-things container">
+            <h2 class="clever-things_title">Clever Things For Curious Humans™</h2>
+            <p class="clever-things_description">
+                There’s no better place to start the hunt for something new and special. Begin on Indiegogo to find
+                clever and unconventional things that solve everyday problems large and small.
+            </p>
+            <div class="clever-things_btns">
+                <a href="" class="sign-up_btn">sign up now</a>
+                <a href="" class="learn-more_btn">learn more</a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer_top container">
+            <div class="footer_top_left">
+                <div class="footer_top_left_column">
+                    <h2 class="footer_top_left_column_title">explore</h2>
+                    <ul class="footer_top_left_column_list">
+                        <li><a href="" class="footer_top_left_column_link">What We Do</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Funding</a></li>
+                        <li><a href="" class="footer_top_left_column_link">GoFundMe</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top_left_column">
+                    <h2 class="footer_top_left_column_title">ABOUT</h2>
+                    <ul class="footer_top_left_column_list">
+                        <li><a href="" class="footer_top_left_column_link">About Us</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Blog</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Trust & Safety</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Help & Support</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Press</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Careers</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top_left_column">
+                    <h2 class="footer_top_left_column_title">ENTREPRENEURS</h2>
+                    <ul class="footer_top_left_column_list">
+                        <li><a href="" class="footer_top_left_column_link">How It Works</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Indiegogo vs. Kickstarter</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Education Center</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Fees</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Enterprise</a></li>
+                        <li><a href="" class="footer_top_left_column_link">China</a></li>
+                        <li><a href="" class="footer_top_left_column_link">Education Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form method="" action="" class="footer_top_right">
+                <i class="fas fa-envelope-open-text"></i>
+                <h3 class="footer_top_right_title">Find it first on Indiegogo</h3>
+                <p class="footer_top_right_description">Discover new and clever products in the Indiegogo newsletter</p>
+                <input class="footer_input-email" type="email" placeholder="Your email address">
+                <div class="check-policy-terms">
+                    <input class="check-policy_checkbox" type="checkbox">
+                    <p class="check-policy-terms_text">I agree to the Terms of Use and have read and understand the
+                        Privacy Policy</p>
+                </div>
+                <input class="footer_signup" type="submit" value="sign me up">
+
+            </form>
+        </div>
+        <div class="footer_social container">
+            <button class="currency_btn">Set Currency</button>
+            <a href="" class="social_btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="social_btn"><i class="fab fa-twitter"></i></a>
+            <a href="" class="social_btn"><i class="fab fa-youtube"></i></a>
+            <a href="" class="social_btn"><i class="fab fa-instagram"></i></a>
+            <a href="" class="social_btn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer_bottom container">
+            <img src="images/policy_img.png" alt="" class="footer_bottom_img">
+            <ul class="footer_bottom_list">
+                <li><a href="" class="footer_bottom_link">Terms of Use</a></li>
+                <li><a href="" class="footer_bottom_link">Privacy Policy</a></li>
+                <li><a href="" class="footer_bottom_link">Cookie Policy</a></li>
+                <li><a href="" class="footer_bottom_link">Do Not Sell My Personal Information</a></li>
+                <li><a href="" class="footer_bottom_link">Accessibility</a></li>
+                <li><a href="" class="footer_bottom_link">© 2021 Indiegogo, Inc. All Rights Reserved</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
